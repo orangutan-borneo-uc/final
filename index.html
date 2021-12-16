@@ -1019,23 +1019,6 @@
         </script>
         <!--LO QUE SIGUE ES OTRA BIBLIOTECA DE JAVASCRIPT-->
         <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
-        <!--LO QUE SIGUE ES LA CONFIGURACIÓN DE LA COMPARACIÓN DE IMÁGENES-->
-        <script>
-            const element = document.querySelector("#yuxtaposicion");
-            const options = {
-                controlColor: "#fff",
-                controlShadow: true,
-                addCircle: true,
-                addCircleBlur: true,
-                showLabels: true,
-                labelOptions: {
-                    before: "Cara",
-                    after: "Sello",
-                    onHover: false,
-                },
-            };
-            const viewer = new ImageCompare(element, options).mount();
-        </script>
         <!-- Este es el script para el mapa -->
         <script>
             var map = L.map("map").setView([1.0, 107.7], 5);
@@ -1063,9 +1046,8 @@
             var mRed = L.marker([1.274309, 113.378906], { icon: redIcon }).bindPopup("<strong>Orangután de Borneo</strong> <br> Pongo pygmaeus.").addTo(map);
             var mOrange = L.marker([1.487107, 99.068527], { icon: orangeIcon }).bindPopup("<strong>Orangután de Tapanuli</strong> <br> Pongo tapanuliensis.").addTo(map);
         </script>
-        <!--BOOTSTRAP OFRECE SU PROPIA BIBLIOTECA DE JAVASCRIPT-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <!--CON ESTE CÓDIGO DE ACTIVA EL POPOVER SOBRE SU NOMBRE-->
+
+	<!--CON ESTE CÓDIGO DE ACTIVA EL POPOVER SOBRE SU NOMBRE-->
         <script>
             var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
             var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
